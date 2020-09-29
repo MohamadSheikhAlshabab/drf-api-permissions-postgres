@@ -208,3 +208,9 @@
 - docker-compose up
 to run test :
 - docker-compose run web python manage.py test
+
+- docker-compose up --build
+-  poetry export -f requirements.txt -o requirements.txt
+- docker-compose up
+- docker-compose up -d
+- docker-compose exec web python manage.py migrate
